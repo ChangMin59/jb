@@ -2,16 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int score =scanner.nextInt();
+        // 자바에서 배열은 자스와는 다르게 {}로 감싸주고 등록되는 모든 값의 자료형이 돌일해야함
+        String[] colors = {"red", "grenn", "blue"};
 
-        if (score >=90){
-            System.out.println("A");
-        } else if (score >= 80) {
-            System.out.println("B");
-        } else if (score >= 70) {
-            System.out.println("C");
-        }
-
+        System.out.println(colors[0]);
+        System.out.println(colors.length);
     }
 }
