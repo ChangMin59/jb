@@ -1,11 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // 자바에서 배열은 자스와는 다르게 {}로 감싸주고 등록되는 모든 값의 자료형이 돌일해야함
-        String[] colors = {"red", "grenn", "blue"};
+        // ArrayList 클래스를 List생성시 반환 받는 자료형이 무조건 문자열 형식으로 지정
+        List<String> names = new ArrayList<>();
+        // 가변형이기 때문에 names인스턴스에서는 add, remove 같은 데이터를 변경가능한 메서드
+        names.add("David");
+        names.add("Emily");
 
-        System.out.println(colors[0]);
-        System.out.println(colors.length);
+        names.remove("Emily");
+
+        System.out.println(names);
     }
 }
